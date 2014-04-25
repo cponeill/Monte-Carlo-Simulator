@@ -1,5 +1,6 @@
 function trial() {
-    var count = 0, sum = 0;
+    var count = 0;
+    var sum = 0;
     while (sum <= 1) {
 	sum += Math.random();
 	count++;
@@ -7,12 +8,12 @@ function trial() {
     return count;
 }
 
-function monteCarlo(n) {
+function monteCarlo(x) {
     var total = 0;
-    for (var i = 0; i < n; i++) {
+    for (var i = 0; i < x; i++) {
 	total += trial();
     }
-    return total / n;
+    return total / x;
 }
 
 console.log(monteCarlo(1000000));
