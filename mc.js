@@ -1,3 +1,5 @@
+// How many times should a random number from [0, 1] be drawn to have it sum over 1?
+
 function trial() {
     var count = 0;
     var sum = 0;
